@@ -1,0 +1,23 @@
+/* Styles go here */
+
+.background-teal {
+  background: #1b89c0;
+}
+
+#home .jumbotron {
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0);
+}
+
+#home {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url(http://i736.photobucket.com/albums/xx1/Cory_Turco/the-starry-night-18891_zpsilzhfq29.jpg) no-repeat center center fixed; 
+  background-size:cover;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  text-decoration: underline;
+}
