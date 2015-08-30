@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js" data-semver="2.1.4" data-require="jquery@*"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" data-require="bootstrap@*" data-semver="3.3.5" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" data-require="bootstrap@*" data-semver="3.3.5"></script>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <title>Turco's Page</title>    
+  </head>
+  
+  <body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-default navbar-fixed-top background-teal">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" aria-expanded="false" aria-controls="navbar" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="color:black" href="#">Cory S. Turco</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar" aria-expanded="false">
+          <ul class="nav navbar-nav">
+            <li class="">
+              <a style="color:black" href="index.html">Home</a>
+            </li>
+            <li class="">
+              <a style="color:black" href="about.html">About</a>
+            </li>
+            <li class="">
+              <a style="color:black" href="classes.html">Classes</a>
+            </li>
+            <li class="active">
+              <a style="color:black" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <!--Contact Form-->
+      <form name="htmlform" method="post" action="contact.php">
+        <!--Full Name-->
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <label for="first_name">First Name *</label>
+              <label for="last_name">Last Name *</label>
+            </div>
+          </div>
+          <div class="panel-body">
+            <input  type="text" name="first_name" maxlength="50" size="60">
+            <input  type="text" name="last_name" maxlength="50" size="60">
+          </div>
+        </div>
+        <!--Email Address-->
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <label for="email">Email Address *</label>
+            </div>
+          </div>
+          <div class="panel-body">
+            <input  type="text" name="email" maxlength="80" size="127">
+          </div>
+        </div>
+        <!--Telephone Number-->
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <label for="telephone">Telephone Number</label>
+            </div>
+          </div>
+          <div class="panel-body">
+            <input  type="text" name="telephone" maxlength="30" size="127">
+          </div>
+        </div>
+        <!--Comments-->
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <label for="comments">Comments *</label> 
+            </div>
+          </div>
+          <div class="panel-body">
+            <textarea  name="comments" maxlength="1000" cols="130" rows="6"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-offset-5">
+            <input type="submit" value="Submit">   ( <a href="http://www.freecontactform.com/html_form.php">HTML Form</a> )
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
